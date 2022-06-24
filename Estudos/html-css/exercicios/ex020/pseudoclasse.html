@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        div:hover{
+            background-color: yellow;width: 230px;
+            height: 230px;
+            box-shadow: 2px 2px 2px black;
+            padding: 15px;
+        }
+        div > p {
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <div>
+        Passe o mouse sobre mim!
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam laudantium quae, consectetur aliquam velit laborum alias in laboriosam nostrum, itaque provident voluptas voluptate sequi eaque quo nihil asperiores officia perferendis.</p>
+    </div>
+</body>
+</html>

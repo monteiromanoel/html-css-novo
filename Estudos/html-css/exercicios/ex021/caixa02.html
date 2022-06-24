@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.26);
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 1px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(161, 161, 161);
+        }
+        nav {
+            background-color: rgb(88, 87, 87);
+            padding: 10px;
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+            box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.26);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline; 
+        }
+        footer > p > a:hover{
+            color: rgb(37, 37, 247);
+        }
+        footer > p > a {
+            text-decoration: none;
+            color: white;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>  
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Site</h1>
+        <!-- Menu -->
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!--Conteúdo principal -->
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia Sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad dicta repudiandae nostrum incidunt minus placeat officiis beatae temporibus excepturi fugiat veritatis magni aliquid ducimus provident, doloremque sit blanditiis eligendi? Nam.
+                </p>
+                <aside>
+                    <p>Artigo escrito por Fulano</p>
+                </aside>
+            </article>
+            <hr>
+            <article>
+                <h2> Notícias Sobre Tecnologia</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptate. Fugiat ipsum aspernatur minus vero nihil ullam optio, incidunt temporibus natus ut distinctio consequatur nulla, tempora, rerum at? Aperiam, voluptas.
+                </p>
+                <aside>
+                    <p>Artigo escrito por Ciclano</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/monteiromanoel" target="_blank">Manoel</a></p>
+    </footer>
+</body>
+</html>
