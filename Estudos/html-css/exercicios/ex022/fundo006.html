@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Size</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: scroll;
+            background-attachment: fixed;
+            */
+
+            /*Shorthand Background
+            Sequência: color > position > repeat > [size] > attachment.
+            Abaixo, os mesmos códigos acima estão declarados por shorthands. 
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover; /*Ele não funciona, apesar de estar documentado que funcionaria. Uma hora pode atualizar.*/
+
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,6 +48,14 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, atque ducimus, praesentium exercitationem beatae ea consectetur harum totam eius mollitia earum, hic sit commodi laborum culpa impedit nostrum ratione quas.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eligendi facere nulla deserunt velit vel sequi id. Illum quidem, ea, quae quaerat suscipit, magnam unde odit iusto numquam distinctio dignissimos.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugit vitae nulla praesentium temporibus incidunt non. Amet rem, explicabo iure voluptatibus pariatur, fuga nesciunt qui ullam officiis natus asperiores consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed corrupti in blanditiis nesciunt quas expedita reprehenderit temporibus quos eos quam minima sapiente impedit totam tempora nemo, maiores laudantium corporis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum perspiciatis odit labore iste quibusdam deleniti laborum hic natus ex officia ab aut ad sit, necessitatibus alias ratione, asperiores sint? Sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cum doloribus ratione facilis ipsam velit reprehenderit ad error soluta incidunt dignissimos nisi, quibusdam molestiae, quis ex! Minus, excepturi saepe. Quis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ratione non magni amet quae quas quos natus voluptates cumque. Excepturi facilis repellendus dolorum recusandae amet pariatur perferendis nam quam laudantium.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam suscipit voluptatibus ab necessitatibus sit nesciunt ducimus at, dolore repudiandae aut incidunt porro, soluta quam nam ad, debitis maxime expedita doloribus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et itaque nobis alias optio ipsa, error amet cupiditate odit repudiandae vel explicabo illum in eligendi asperiores aperiam laborum officiis rerum saepe.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam consequuntur totam officia? Aut dolor, soluta sint quo ut harum saepe numquam a nobis nostrum error praesentium suscipit, ex quisquam et?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti labore impedit facere explicabo quae architecto, quos dolor magni illo, nemo maxime laboriosam ipsa mollitia at nam odit optio harum voluptates?
         </p>
     </main>
 </body>
