@@ -8,6 +8,11 @@ font-family: 'Sriracha', cursive;
     --fonte-padrao: 'Sriracha', cursive;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     margin: 0px;
 }
@@ -21,21 +26,98 @@ main {
 
 header > h1 {
     font-family: 'Passion One', cursive;
-    margin-top: 0px;
+    font-size: 10em;
+    margin: 0px;
 }
 header > p {
-    font-family: var(--fonte-padrao);
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 30px;
+    font-size: 30px;
 }
 header {
     background-color: black;
-    width: 100%;
+    max-width: 100%;
     border: none;
     text-align: center;
     color: white;
     margin: 0px;
+    min-height: 150px;
 }
 
-section > div > p {
+section > div p {
     font-family: var(--fonte-padrao);
+}
+
+.txt-attachment{
+    background-color: black;
+    max-width: 200px;
+    margin: 20px 0px 0px 15px;
+    padding-left: 10px;
+}
+
+#container1{
+    position: relative;
+    height: 200px;
+    width: 500px;
+    background-attachment: fixed;
+}
+
+#conteudo1 {
+    color: white;
+    position: absolute;
+    width: 600px;
+    height: 230px;
+    background-image: url("/Desafios/Módulo 3/d012/imagens/background001.jpg");
+
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#container2 {    
+    position: relative;
+    height: 200px;
+    width: 500px;
+    background-attachment: fixed;
+}
+
+#conteudo2{
+    color: white;
+    position: absolute;
+    width: 600px;
+    height: 230px;
+    background-image: url("/Desafios/Módulo 3/d012/imagens/background002.jpg");
+
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.txt-attachment2{
+    background-color: rgba(0, 0, 0, 0.37);
+    max-width: 200px;
+    margin: 20px 0px 0px 15px;
+    padding-left: 10px;
+}
+
+
+footer > p{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: rgb(60, 132, 240);
+    text-decoration: underline;
 }
