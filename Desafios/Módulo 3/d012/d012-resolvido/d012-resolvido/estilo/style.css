@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sciracha', cursive;
+    
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -20,8 +27,8 @@ header {
 }
 
 header > h1 {
-    font-size: 10vw;
-    font-family: 'Passion One', cursive;
+    font-size: 10vw; /**/
+    font-family: var(--fonte2);
     color: white;
     margin: 0px;
     padding-top: 50px;
@@ -33,11 +40,13 @@ header > p {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
     margin: 0px;
+    font-size: 3vw;
 }
 header > p > a, footer > p > a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    font-family: var(--fonte1);
 }
 header > p > a:hover, footer > p > a:hover {
     text-decoration: underline;
@@ -49,10 +58,11 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /*Para dar espaçamento entre as linhas */
     padding-left: 30px; /*Também para dar espaçamento*/
+    font-family: var(--fonte3);
+    font-size: 3.8vw;
 }
 
 .corpo-texto{
-    font-family: 'Sriracha', cursive;
     background-color: white;
 }
 
@@ -64,9 +74,8 @@ section {
     background-attachment: fixed;
 }
 .corpo-texto-paralax1 {
-    font-family: 'Sriracha', cursive;
     color: white;
-    width: 400px;
+    display: inline-block; /*Caixa que se adapta ao conteúdo*/
     background-color: rgba(0, 0, 0, 0.685);
     padding: 10px;
 }
@@ -76,9 +85,8 @@ section {
     background-size: cover;
 }
 .corpo-texto-paralax2 {
-    font-family: 'Sriracha', cursive;
     color: white;
-    width: 400px;
+    display: inline-block; /*Caixa que se adapta ao conteúdo*/
     background-color: rgba(0, 0, 0, 0.205);
     padding: 10px;
 }
