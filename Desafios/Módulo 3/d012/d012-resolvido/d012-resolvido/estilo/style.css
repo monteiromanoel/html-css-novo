@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0px;
+} 
+
+
+header {
+    background-color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+header > h1 {
+    font-size: 10vw;
+    font-family: 'Passion One', cursive;
+    color: white;
+    margin: 0px;
+    padding-top: 50px;
+    font-variant: small-caps; /*Cria as primeiras letras maiores que as outras*/
+    /*text-transform: uppercase; Transforma tudo em maiúscula*/
+}
+header > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+    margin: 0px;
+}
+header > p > a, footer > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header > p > a:hover, footer > p > a:hover {
+    text-decoration: underline;
+}
+
+section {
+    /*Configuração para manter as partes da poesia na tela*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.corpo-texto{
+    font-family: 'Sriracha', cursive;
+    background-color: white;
+}
+
+#paralax1 {
+    background-image: url("/Desafios/Módulo 3/d012/d012-resolvido/imagens/background001.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.corpo-texto-paralax1 {
+    font-family: 'Sriracha', cursive;
+    color: white;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 10px;
+}
+
+#paralax2 {
+    background: lightgray url("/Desafios/Módulo 3/d012/imagens/background002.jpg") right center no-repeat fixed;
+    background-size: cover;
+}
+.corpo-texto-paralax2 {
+    font-family: 'Sriracha', cursive;
+    color: white;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+footer > p {
+    margin: 0px;
+    padding: 5px;
+}
