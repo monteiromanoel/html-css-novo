@@ -47,8 +47,8 @@ section {
     /*Configuração para manter as partes da poesia na tela*/
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    line-height: 2em; /*Para dar espaçamento entre as linhas */
+    padding-left: 30px; /*Também para dar espaçamento*/
 }
 
 .corpo-texto{
