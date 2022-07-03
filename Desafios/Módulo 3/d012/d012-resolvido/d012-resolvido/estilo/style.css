@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Bandeiras';
+    src: url('/Desafios/Módulo 3/d012/d012-resolvido/font/KgChasingCars-38qp.ttf') format('truetype');
+} 
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sciracha', cursive;
+    --fonte4: 'Bandeiras', Arial, sans-serif;
     
 }
 
@@ -28,11 +34,13 @@ header {
 
 header > h1 {
     font-size: 10vw; /**/
-    font-family: var(--fonte2);
+    font-family: var(--fonte4);
+    font-weight: bolder;
     color: white;
     margin: 0px;
     padding-top: 50px;
-    font-variant: small-caps; /*Cria as primeiras letras maiores que as outras*/
+    padding-bottom: 20px;
+    /* font-variant: small-caps; Cria as primeiras letras maiores que as outras*/
     /*text-transform: uppercase; Transforma tudo em maiúscula*/
 }
 header > p {
@@ -62,6 +70,10 @@ section {
     font-size: 3.8vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .corpo-texto{
     background-color: white;
 }
@@ -72,23 +84,27 @@ section {
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
 }
 .corpo-texto-paralax1 {
     color: white;
     display: inline-block; /*Caixa que se adapta ao conteúdo*/
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.253);
     padding: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 
 #paralax2 {
     background: lightgray url("/Desafios/Módulo 3/d012/imagens/background002.jpg") right center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
 }
 .corpo-texto-paralax2 {
     color: white;
     display: inline-block; /*Caixa que se adapta ao conteúdo*/
     background-color: rgba(0, 0, 0, 0.205);
     padding: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
